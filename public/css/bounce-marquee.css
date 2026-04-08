@@ -1,0 +1,84 @@
+/* The outer box that defines the "bounce area" */
+.bounce-container {
+    position: absolute;
+    overflow: hidden;
+
+    /*Container size*/
+    height: 24.5%;
+    width: 19%;
+
+    /*Container offset*/
+    bottom: 13%;
+    left: 79.6%;
+
+    z-index: 100;
+}
+
+/* OXMILK ANIMATION*/
+.bounce-x-1 {
+    animation: bounceX-a 2s linear infinite alternate;
+}
+.bounce-y-1 {
+    animation: bounceY-a 1.5s linear infinite alternate;
+}
+@keyframes bounceX-a {
+    from { transform: translateX(0); }
+    to { transform: translateX(calc(var(--calculated-c-width) - var(--oxmilk-img-width))); }
+}
+@keyframes bounceY-a {
+    from { transform: translateY(0); }
+    to { transform: translateY(calc(var(--calculated-c-height) - var(--oxmilk-img-height))); }
+}
+
+/* CARTON ANIMATION*/
+.bounce-x-2 {
+    animation: bounceX-b 2s linear infinite alternate;
+    animation-delay: -1.2s;
+}
+.bounce-y-2 {
+    animation: bounceY-b 1.5s linear infinite alternate;
+    animation-delay: -0.5s;
+}
+@keyframes bounceX-b {
+    from { transform: translateX(0); }
+    to { transform: translateX(calc(var(--calculated-c-width) - var(--carton-img-width))); }
+}
+@keyframes bounceY-b {
+    from { transform: translateY(0); }
+    to { transform: translateY(calc(var(--calculated-c-height) - var(--carton-img-height))); }
+}
+
+/* GABAGOOL ANIMATION*/
+.bounce-x-3 {
+    animation: bounceX-c 2s linear infinite alternate;
+    animation-delay: -1.5s;
+}
+.bounce-y-3 {
+    animation: bounceY-c 1.5s linear infinite alternate;
+    animation-delay: -2.3s;
+}
+@keyframes bounceX-c {
+    from { transform: translateX(0); }
+    to { transform: translateX(calc(var(--calculated-c-width) - var(--gabagool-img-width))); }
+}
+@keyframes bounceY-c {
+    from { transform: translateY(0); }
+    to { transform: translateY(calc(var(--calculated-c-height) - var(--gabagool-img-height))); }
+}
+
+
+/* Actual images */
+#oxmilk-bounce {
+    display: block;
+    max-width: 100%;
+}
+#gabagool-bounce {
+    display: block;
+    width: 20%;
+    max-width: 100%;
+}
+#carton-bounce {
+    display: block;
+    width: 30%;
+    max-width: 100%;
+}

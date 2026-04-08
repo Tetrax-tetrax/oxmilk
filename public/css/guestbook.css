@@ -1,0 +1,24 @@
+#gb-box {
+    position: absolute;
+    width: 20.5%;
+    height: 26.5%;
+    top: 61.5%;
+    left: 79%;
+    z-index: 80;
+}
+
+#gb-logo {
+    position: absolute;
+    height: 39%;
+    top: 51%;
+    left: 76.5%;
+    z-index: 110;
+}
+
+#sticky-note {
+    position: absolute;
+    height: 7%;
+    top: 56%;
+    left: 95%;
+    z-index: 120;
+}

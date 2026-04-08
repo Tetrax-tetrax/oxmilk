@@ -1,0 +1,55 @@
+@font-face {
+    font-family: bubbleClub;
+    src: url(../font-family/bubble_club.TTF);
+}
+
+/*
+p {
+    font-family: bubbleClub;
+}
+*/
+
+body {
+  background-image: url("../assets/background.webp");
+  background-repeat: repeat;
+  margin: 0;
+  padding: 0;
+}
+
+div {
+    display: block;
+}
+
+.content-box {
+    min-height: calc(100dvh - var(--total-banner-height));
+    margin: auto;
+    max-width: 1200px;
+}
+
+.center-imgs {
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+#main-image {
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+    min-width: 300px;
+    overflow:hidden;
+    padding-top: 50px;
+}
+
+.image-overlay-container {
+    position: relative;
+    display: inline-flex;
+    margin: auto;
+}
+
+.overlay {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
