@@ -5,13 +5,29 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Oxmilk's Portfolio</title>
+
+    <link rel="preconnect" href="https://clownmilk.atabook.org">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="css/banner-marquee.css" as="style">
+
     <script defer src="scripts/get-banner-size.js"></script>
     <script defer src="scripts/get-bounce-img-size.js"></script>
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/banner-marquee.css">
     <link rel="stylesheet" href="css/bounce-marquee.css">
     <link rel="stylesheet" href="css/guestbook.css">
     <link rel="stylesheet" href="css/overlay-imgs.css">
+
+    <!-- Reference for this function -->
+    <!-- https://stackoverflow.com/questions/10380787/load-iframe-after-page-load -->
+    <script>
+        function loadDeferredIframe() {
+            var iframe = document.getElementById("my-deferred-iframe");
+            iframe.src = "https://clownmilk.atabook.org"
+        };
+        window.onload = loadDeferredIframe;
+    </script>
 </head>
 
 <body>
@@ -61,6 +77,10 @@
                 <div class="overlay">
                     <img id="clickable-foopy" src="assets/clickhere.webp" alt="Click Here Foopy">
                 </div>
+                <div class="overlay">
+                    <iframe src="about:blank" title="Oxmilk's Guestbook" loading="lazy" id="my-deferred-iframe"
+                        class="guestbook is-hidden"></iframe>
+                </div>
             </div>
         </div>
     </div>
@@ -71,6 +91,17 @@
             <img src="assets/wahi.webp" alt="banner">
         </div>
     </div>
+
+    <!-- This script toggles guestbook visibility when clicking foopy-->
+    <script>
+        const guestbook = document.querySelector(".guestbook");
+        const clickable = document.querySelector("#clickable-foopy");
+        if (guestbook && clickable) {
+            clickable.addEventListener('click', () => {
+                guestbook.classList.toggle('is-hidden');
+            });
+        }
+    </script>
 </body>
 
 </html>

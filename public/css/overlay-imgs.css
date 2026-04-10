@@ -4,4 +4,6 @@
     top: 78%;
     left: 74%;
     z-index: 130;
+
+    cursor: pointer;
 }
