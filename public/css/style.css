@@ -3,12 +3,6 @@
     src: url(../font-family/bubble_club.TTF);
 }
 
-/*
-p {
-    font-family: bubbleClub;
-}
-*/
-
 body {
   background-image: url("../assets/background.webp");
   background-repeat: repeat;
@@ -18,6 +12,17 @@ body {
 
 div {
     display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.img-text {
+    font-family: bubbleClub;
+    color: white;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
 .content-box {
@@ -53,3 +58,9 @@ div {
     width: 100%;
     height: 100%;
 }
+
+.is-hidden {
+    visibility: hidden;
+    pointer-events: none;
+}
+

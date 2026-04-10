@@ -33,8 +33,3 @@
     border: none;
     z-index: 135;
 }
-
-.guestbook.is-hidden {
-    visibility: hidden;
-    pointer-events: none;
-}

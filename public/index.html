@@ -41,7 +41,31 @@
     <div class="content-box">
         <div class="center-imgs">
             <div class="image-overlay-container">
+                <!-- Base image -->
                 <img id="main-image" src="assets/oxmilk1.webp">
+
+                <!-- Guestbook area (logo, sticky note, border) -->
+                <div class="overlay">
+                    <img id="gb-box" src="assets/guestbookbox.webp" alt="Guestbook Box">
+                </div>
+                <div class="overlay">
+                    <img id="gb-logo" src="assets/guestbooklogo.webp" alt="Guestbook Logo">
+                </div>
+                <div class="overlay">
+                    <img id="sticky-note" src="assets/stick.webp" alt="stick">
+                </div>
+                <div class="overlay">
+                    <img id="spook-foop" class="is-hidden" src="assets/spookfoop.webp" alt="Guestbook Logo">
+                </div>
+                <div class="overlay">
+                    <img id="clickable-foopy" src="assets/clickhere.webp" alt="Click Here Foopy">
+                </div>
+                <div class="overlay">
+                    <iframe src="about:blank" title="Oxmilk's Guestbook" loading="lazy" id="my-deferred-iframe"
+                        class="guestbook is-hidden"></iframe>
+                </div>
+
+                <!-- Bouncing images -->
                 <div class="bounce-vars">
                     <div class="bounce-container">
                         <div class="bounce-y-1">
@@ -65,22 +89,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="overlay">
-                    <img id="gb-box" src="assets/guestbookbox.webp" alt="Guestbook Box">
+                <!-- Main image text -->
+                <div class="overlay img-text" style="top: 31%; right: 28%; font-size: 162%; transform: rotate(20deg);">
+                    <a href="https://www.google.com" target="_blank">Commission<br>info</a>
                 </div>
-                <div class="overlay">
-                    <img id="gb-logo" src="assets/guestbooklogo.webp" alt="Guestbook Logo">
+                <div class="overlay img-text" style="top: 55%; right: 8%; font-size: 162%; transform: rotate(-15deg);">
+                    <a href="https://www.google.com" target="_blank">Discord</a>
                 </div>
-                <div class="overlay">
-                    <img id="sticky-note" src="assets/stick.webp" alt="stick">
+                <div class="overlay img-text" style="top: 71%; right: 20%; font-size: 162%; transform: rotate(4deg);">
+                    <a href="https://www.google.com" target="_blank">Social<br>Media</a>
                 </div>
-                <div class="overlay">
-                    <img id="clickable-foopy" src="assets/clickhere.webp" alt="Click Here Foopy">
-                </div>
-                <div class="overlay">
-                    <iframe src="about:blank" title="Oxmilk's Guestbook" loading="lazy" id="my-deferred-iframe"
-                        class="guestbook is-hidden"></iframe>
-                </div>
+                <div class="overlay img-text" style="top: 88.5%; left: 11%; font-size: 200%;"><a
+                        href="https://www.google.com" target="_blank">SUPPORT ME</a></div>
             </div>
         </div>
     </div>
@@ -96,9 +116,13 @@
     <script>
         const guestbook = document.querySelector(".guestbook");
         const clickable = document.querySelector("#clickable-foopy");
+        const spook = document.querySelector("#spook-foop");
+        const note = document.querySelector("#sticky-note");
         if (guestbook && clickable) {
             clickable.addEventListener('click', () => {
                 guestbook.classList.toggle('is-hidden');
+                spook.classList.toggle('is-hidden');
+                note.classList.toggle('is-hidden');
             });
         }
     </script>
