@@ -28,6 +28,7 @@ a {
 .content-box {
     min-height: calc(100dvh - var(--total-banner-height));
     margin: auto;
+    min-width: 690px;
     max-width: 1200px;
 }
 
@@ -44,6 +45,8 @@ a {
     min-width: 300px;
     overflow:hidden;
     padding-top: 50px;
+
+    pointer-events: none;
 }
 
 .image-overlay-container {
@@ -57,6 +60,12 @@ a {
     overflow: hidden;
     width: 100%;
     height: 100%;
+    pointer-events: none;
+}
+
+.overlay-text {
+    position: absolute;
+    overflow: hidden;
 }
 
 .is-hidden {
@@ -64,3 +73,28 @@ a {
     pointer-events: none;
 }
 
+.scaling-text-medium {
+    font-size: 15px;
+}
+
+.scaling-text-large {
+    font-size: 20px;
+}
+
+@media screen and (min-width: 690px) {
+    .scaling-text-medium {
+        font-size: 2.2vw;
+    }
+    .scaling-text-large {
+        font-size: 2.8vw;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .scaling-text-medium {
+        font-size: 162%;
+    }
+    .scaling-text-large {
+        font-size: 200%;
+    }
+}
