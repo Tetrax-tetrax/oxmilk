@@ -9,9 +9,10 @@
 
 #gb-logo {
     position: absolute;
-    height: 39%;
-    top: 51%;
-    left: 76.5%;
+    height: 45%;
+    width: 22%;
+    top: 49%;
+    left: 78%;
     pointer-events: none;
     z-index: 140;
 }
@@ -32,4 +33,6 @@
     width: 19.1%;
     border: none;
     z-index: 135;
+
+    pointer-events: auto;
 }

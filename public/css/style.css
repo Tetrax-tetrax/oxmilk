@@ -8,6 +8,8 @@ body {
   background-repeat: repeat;
   margin: 0;
   padding: 0;
+
+  --content-width: 1400px;
 }
 
 div {
@@ -29,7 +31,7 @@ a {
     min-height: calc(100dvh - var(--total-banner-height));
     margin: auto;
     min-width: 690px;
-    max-width: 1200px;
+    max-width: var(--content-width);
 }
 
 .center-imgs {
@@ -41,10 +43,9 @@ a {
 #main-image {
     margin: auto;
     width: 100%;
-    max-width: 1200px;
+    max-width: var(--content-width);
     min-width: 300px;
     overflow:hidden;
-    padding-top: 50px;
 
     pointer-events: none;
 }
@@ -66,6 +67,10 @@ a {
 .overlay-text {
     position: absolute;
     overflow: hidden;
+}
+
+.overlay-text:hover {
+    color: #CEE5ED; /* pastel light blue */
 }
 
 .is-hidden {
@@ -94,7 +99,10 @@ a {
     .scaling-text-medium {
         font-size: 162%;
     }
+}
+
+@media screen and (min-width: 1390px) {
     .scaling-text-large {
-        font-size: 200%;
+        font-size: 240%;
     }
 }

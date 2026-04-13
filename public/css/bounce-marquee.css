@@ -4,7 +4,7 @@
     overflow: hidden;
 
     /*Container size*/
-    height: 24.5%;
+    height: 25%;
     width: 19%;
 
     /*Container offset*/
@@ -32,12 +32,12 @@
 
 /* CARTON ANIMATION*/
 .bounce-x-2 {
-    animation: bounceX-b 2s linear infinite alternate;
-    animation-delay: -1.2s;
+    animation: bounceX-b 2.25s linear infinite alternate;
+    animation-delay: -1.6s;
 }
 .bounce-y-2 {
-    animation: bounceY-b 1.5s linear infinite alternate;
-    animation-delay: -0.5s;
+    animation: bounceY-b 1.45s linear infinite alternate;
+    animation-delay: -0.7s;
 }
 @keyframes bounceX-b {
     from { transform: translateX(0); }
@@ -50,11 +50,11 @@
 
 /* GABAGOOL ANIMATION*/
 .bounce-x-3 {
-    animation: bounceX-c 2s linear infinite alternate;
+    animation: bounceX-c 1.25s linear infinite alternate;
     animation-delay: -1.5s;
 }
 .bounce-y-3 {
-    animation: bounceY-c 1.5s linear infinite alternate;
+    animation: bounceY-c 0.95s linear infinite alternate;
     animation-delay: -2.3s;
 }
 @keyframes bounceX-c {
