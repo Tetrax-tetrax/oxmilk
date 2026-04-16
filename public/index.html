@@ -114,6 +114,7 @@
                         href="https://ko-fi.com/oxerdace" target="_blank">SUPPORT ME</a></div>
 
                 <!-- Left menu text -->
+                <!-- GAME DEV BLOG LINK -->
                 <div class="overlay">
                     <a href="" target="_blank" style="display: block;">
                         <div class="hover-container">
@@ -128,6 +129,7 @@
                 <div class="overlay"><img src="assets/left-menu/text-border.webp"
                         style="position: absolute; top: 37%; right: 81.2%; width: 16.15%;">
                 </div>
+                <!-- WEBCOMIC LINK -->
                 <div class="overlay">
                     <a href="https://www.webtoons.com/en/canvas/flower-boy/list?title_no=377351" target="_blank">
                         <div class="hover-container">
@@ -142,6 +144,7 @@
                 <div class="overlay"><img src="assets/left-menu/text-border.webp"
                         style="position: absolute; top: 45%; right: 81.2%; width: 16.15%;">
                 </div>
+                <!-- VISUAL NOVEL LINK -->
                 <div class="overlay">
                     <a href="" target="_blank">
                         <div class="hover-container">
@@ -156,6 +159,7 @@
                 <div class="overlay"><img src="assets/left-menu/text-border.webp"
                         style="position: absolute; top: 53%; right: 81.2%; width: 16.15%;">
                 </div>
+                <!-- ADOPTABLES LINK -->
                 <div class="overlay">
                     <a href="https://toyhou.se/7769763.adoptables-hub" target="_blank">
                         <div class="hover-container">
@@ -196,6 +200,17 @@
                     <div onclick="closeDialog('dialog1')"
                         style="position: absolute; top: 4.5%; left: 79.5%; height: 4em; width: 5em; cursor: pointer;">
                     </div>
+                    <div class="credits-words"
+                        style="position: absolute; top: 18%; padding: 2em; padding-top: 4em; text-align: left;">
+                        <p><b>DESIGN</b>: <a href="https://github.com/Towazae" target="_blank">Oxmilk</a></p>
+                        <p><b>PIXEL ART</b>: <a href="https://toyhou.se/Bearnas" target="_blank">Bearnas</a></p>
+                        <p><b>DEVELOPMENT</b>: <a href="https://github.com/dawnandrew100"
+                                target="_blank">dawnandrew100</a></p>
+                        <p><b>BLINKIES</b>: <a href="https://adriansblinkiecollection.neocities.org/"
+                                target="_blank">Adrian's Blinkie
+                                Collection</a></p>
+                        <p><b>GUESTBOOK HOSTING</b>: <a href="https://atabook.org/" target="_blank">Atabook</a></p>
+                    </div>
                     <img src="assets/left-menu/creditspopup.webp">
                 </dialog>
             </div>
@@ -216,12 +231,14 @@
         const clickableArrow = document.querySelector("#clickable-foopy-arrow");
         const spook = document.querySelector("#spook-foop");
         const note = document.querySelector("#sticky-note");
+        const bouncingImages = document.querySelector(".bounce-vars");
         if (guestbook && clickable) {
             clickable.addEventListener('click', () => {
                 guestbook.classList.toggle('is-hidden');
                 clickableArrow.classList.toggle('is-hidden');
                 spook.classList.toggle('is-hidden');
                 note.classList.toggle('is-hidden');
+                bouncingImages.classList.toggle('is-hidden');
             });
         }
     </script>

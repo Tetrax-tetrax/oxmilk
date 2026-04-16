@@ -21,6 +21,10 @@ a {
   text-decoration: inherit;
 }
 
+p {
+    font-family: bubbleClub;
+}
+
 .img-text {
     font-family: bubbleClub;
     color: white;
@@ -70,7 +74,7 @@ a {
 }
 
 .overlay-text:hover {
-    color: #CEE5ED; /* pastel light blue */
+    color: #DB5F48; /* pale light red/orange */
 }
 
 .is-hidden {
@@ -105,4 +109,14 @@ a {
     .scaling-text-large {
         font-size: 240%;
     }
+}
+
+/* Text in credit box */
+.credits-words a {
+    color: #5C8DE6
+;
+}
+
+.credits-words a:hover {
+    color: #DB5F48;
 }
