@@ -20,7 +20,7 @@ index.html          # Main entry point
 ## Credits
 
 * **Design**: [Oxmilk](https://github.com/Towazae)
-* **Pixel Art**: Bearnas
+* **Pixel Art**: [Bearnas](https://toyhou.se/Bearnas)
 * **Development**: [dawnandrew100](https://github.com/dawnandrew100)
 * **Blinkies:** [Adrian's Blinkie Collection](https://adriansblinkiecollection.neocities.org/)
 * **Guestbook Hosting:** [Atabook](https://atabook.org/)

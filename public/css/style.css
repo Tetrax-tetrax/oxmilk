@@ -90,6 +90,7 @@ p {
     font-size: 20px;
 }
 
+/* Responsive CSS */
 @media screen and (min-width: 690px) {
     .scaling-text-medium {
         font-size: 2.2vw;
