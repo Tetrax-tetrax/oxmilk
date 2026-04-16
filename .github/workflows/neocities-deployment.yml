@@ -1,0 +1,31 @@
+# https://github.com/bcomnes/deploy-to-neocities
+name: Deploy to neocities
+# Publishes every change made to main
+on:
+  push:
+    branches:
+      - main
+
+concurrency: # prevent concurrent deploys doing strange things
+  group: deploy-to-neocities
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6
+      # Compiles .ts files to .js in the public folder
+      - name: Compile Typescript files
+        run: tsc public/*.ts
+      # When the dist_dir is ready, deploy it to neocities
+      # Here we deploy the folder named `public`
+      - name: Deploy to neocities
+        uses: bcomnes/deploy-to-neocities@v3
+        with:
+          api_key: ${{ secrets.NEOCITIES_API_TOKEN }}
+          cleanup: true
+          neocities_supporter: false
+          preview_before_deploy: true
+          dist_dir: public
