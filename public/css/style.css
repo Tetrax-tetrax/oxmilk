@@ -4,12 +4,12 @@
 }
 
 body {
-  background-image: url("../assets/background.webp");
-  background-repeat: repeat;
-  margin: 0;
-  padding: 0;
+    background-image: url("../assets/background.webp");
+    background-repeat: repeat;
+    margin: 0;
+    padding: 0;
 
-  --content-width: 1400px;
+    --content-width: 1400px;
 }
 
 div {
@@ -17,18 +17,23 @@ div {
 }
 
 a {
-  color: inherit;
-  text-decoration: inherit;
+    /* Link colour not set to default blue */
+    color: inherit;
+    text-decoration: inherit;
 }
 
 p {
     font-family: bubbleClub;
 }
 
-.img-text {
-    font-family: bubbleClub;
-    color: white;
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+#main-image {
+    margin: auto;
+    width: 100%;
+    max-width: var(--content-width);
+    min-width: 300px;
+    overflow:hidden;
+
+    pointer-events: none;
 }
 
 .content-box {
@@ -44,16 +49,7 @@ p {
     margin: auto;
 }
 
-#main-image {
-    margin: auto;
-    width: 100%;
-    max-width: var(--content-width);
-    min-width: 300px;
-    overflow:hidden;
-
-    pointer-events: none;
-}
-
+/* Everything to do with text and images on top of main image */
 .image-overlay-container {
     position: relative;
     display: inline-flex;
@@ -77,6 +73,12 @@ p {
     color: #DB5F48; /* pale light red/orange */
 }
 
+.img-text {
+    font-family: bubbleClub;
+    color: white;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
 .is-hidden {
     visibility: hidden;
     pointer-events: none;
@@ -91,6 +93,12 @@ p {
 }
 
 /* Responsive CSS */
+@media screen and (max-width: 500px) {
+    .scaling-text-medium {
+        font-size: 3vw;
+    }
+}
+
 @media screen and (min-width: 690px) {
     .scaling-text-medium {
         font-size: 2.2vw;
@@ -112,10 +120,27 @@ p {
     }
 }
 
+/* Credit box */
+.credits-box {
+    background-image: url("../assets/creditspopup.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 90vw;
+    max-width: 500px;
+    aspect-ratio: 1;
+}
+
 /* Text in credit box */
+.credits-words {
+    position: absolute;
+    top: 18%;
+    text-align: left;
+}
+
 .credits-words a {
-    color: #5C8DE6
-;
+    color: #5C8DE6;
 }
 
 .credits-words a:hover {

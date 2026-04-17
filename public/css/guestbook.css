@@ -35,4 +35,6 @@
     z-index: 135;
 
     pointer-events: auto;
+    /* For mobile */
+    touch-action: pan-y;
 }

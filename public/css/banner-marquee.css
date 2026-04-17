@@ -1,6 +1,7 @@
 /* Created with code from https://stackoverflow.com/questions/56639772/how-to-create-a-marquee-that-appears-infinite-using-css-or-javascript */
 .marquee {
     width: 100%;
+    min-width: 690px;
 
     overflow: hidden;
     position: relative;
@@ -13,17 +14,17 @@
     justify-content: flex-start;
 }
 
+.marquee-content img {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
 #top-banner {
     animation: scroll-marquee-left 20s linear infinite;
 }
 #bottom-banner {
     animation: scroll-marquee-right 20s linear infinite;
-}
-
-.marquee-content img {
-    display: block;
-    margin: 0;
-    padding: 0;
 }
 
 @keyframes scroll-marquee-left {
