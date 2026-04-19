@@ -49,6 +49,13 @@ p {
     margin: auto;
 }
 
+.center-container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
 /* Everything to do with text and images on top of main image */
 .image-overlay-container {
     position: relative;
@@ -70,7 +77,7 @@ p {
 }
 
 .overlay-text:hover {
-    color: #DB5F48; /* pale light red/orange */
+    color: #DB5F48; /* medium/pastel red/orange */
 }
 
 .img-text {
@@ -140,9 +147,19 @@ p {
 }
 
 .credits-words a {
-    color: #5C8DE6;
+    color: #5C8DE6; /* medium/pastel blue */
 }
 
 .credits-words a:hover {
-    color: #DB5F48;
+    color: #DB5F48; /* medium/pastel red/orange */
+}
+
+/* Coming Soon Return Home */
+
+.home {
+    color: #5C8DE6; /* medium/pastel blue */
+}
+
+.home:hover {
+    color: #DB5F48; /* medium/pastel red/orange */
 }

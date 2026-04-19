@@ -8,6 +8,7 @@
     <meta name="author" content="Andrew Hennis">
     <meta name="keywords" content="oxmilk, portfolio, clownmilk, milk">
     <meta name="description" content="Oxmilk's portfolio website">
+
     <title>Oxmilk's Portfolio</title>
     <link rel="icon" type="image/x-icon" href="assets/guestbook/clickherefoop.webp">
 
@@ -28,7 +29,7 @@
     <!-- https://stackoverflow.com/questions/10380787/load-iframe-after-page-load -->
     <script>
         function loadDeferredIframe() {
-            var iframe = document.getElementById("my-deferred-iframe");
+            var iframe = document.getElementById("deferred-iframe");
             iframe.src = "https://clownmilk.atabook.org"
         };
         window.onload = loadDeferredIframe;
@@ -69,7 +70,7 @@
                     <img id="clickable-foopy-arrow" src="assets/guestbook/clickherearrow.webp" alt="Click Here Foopy">
                 </div>
                 <div class="overlay">
-                    <iframe src="about:blank" title="Oxmilk's Guestbook" loading="lazy" id="my-deferred-iframe"
+                    <iframe src="about:blank" title="Oxmilk's Guestbook" loading="lazy" id="deferred-iframe"
                         class="guestbook is-hidden"></iframe>
                 </div>
 
@@ -117,7 +118,8 @@
                 <!-- Left menu text -->
                 <!-- GAME DEV BLOG LINK -->
                 <div class="overlay">
-                    <a href="" target="_blank" style="display: block;">
+                    <a href="https://www.notion.so/GAME-DEV-BLOG-34565a7e71f780c6b7b5c538fec53300" target="_blank"
+                        style="display: block;">
                         <div class="hover-container">
                             <img src="assets/left-menu/gamedevmain.webp" class="offhover"
                                 style="position: absolute; top: 28%; right: 81.6%; width: 15%;">
@@ -147,7 +149,7 @@
                 </div>
                 <!-- VISUAL NOVEL LINK -->
                 <div class="overlay">
-                    <a href="" target="_blank">
+                    <a href="./coming_soon.html">
                         <div class="hover-container">
                             <img src="assets/left-menu/visualnovmain.webp" class="offhover"
                                 style="position: absolute; top: 47%; right: 81.6%; width: 15%;">
@@ -243,12 +245,6 @@
                 note.classList.toggle('is-hidden');
                 bouncingImages.classList.toggle('is-hidden');
             });
-        }
-    </script>
-
-    <script>
-        function startHover(menuId, newSource) {
-            document.getElementById(menuId).src = newSource;
         }
     </script>
 
