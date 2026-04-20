@@ -12,12 +12,17 @@
 .marquee-content {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: nowrap;
+    width: max-content;
 }
 
 .marquee-content img {
     display: block;
     margin: 0;
     padding: 0;
+
+    flex-shrink: 0;
+    width: auto;
 }
 
 #top-banner {

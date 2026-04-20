@@ -130,7 +130,7 @@ p {
 /* Credit box */
 .credits-box {
     background-image: url("../assets/creditspopup.webp");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
@@ -147,19 +147,21 @@ p {
 }
 
 .credits-words a {
-    color: #5C8DE6; /* medium/pastel blue */
+    color: #5C8DE6; !important /* medium/pastel blue */
 }
 
 .credits-words a:hover {
-    color: #DB5F48; /* medium/pastel red/orange */
+    color: #DB5F48; !important /* medium/pastel red/orange */
 }
 
 /* Coming Soon Return Home */
 
-.home {
-    color: #5C8DE6; /* medium/pastel blue */
+p.home {
+    color: #5C8DE6 !important; /* medium/pastel blue */
+    -webkit-text-fill-color: #5C8DE6; /* iOS colour */
 }
 
-.home:hover {
-    color: #DB5F48; /* medium/pastel red/orange */
+p.home:hover {
+    color: #DB5F48 !important; /* medium/pastel red/orange */
+    -webkit-text-fill-color: #DB5F48; /* iOS colour */
 }
