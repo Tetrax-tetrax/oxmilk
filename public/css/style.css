@@ -130,7 +130,7 @@ p {
 /* Credit box */
 .credits-box {
     background-image: url("../assets/creditspopup.webp");
-    background-size: auto;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 
