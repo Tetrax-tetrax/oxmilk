@@ -135,7 +135,9 @@ p {
     background-position: center;
 
     width: 90vw;
+    height: 90vw;
     max-width: 500px;
+    max-height: 500px;
     aspect-ratio: 1;
 }
 
