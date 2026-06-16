@@ -50,11 +50,20 @@ p {
 }
 
 .center-container {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
 }
+
+.center-container > * {
+    flex-shrink: 1;
+    min-height: 0;
+    max-height: 70vh;
+    max-width: 80vw;
+}
+
 
 /* Everything to do with text and images on top of main image */
 .image-overlay-container {
